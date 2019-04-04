@@ -1,0 +1,9 @@
+---
+applications:
+  - name: spring-mailsender-demo
+    random-route: true
+    path: target/spring-mailsender-demo.jar
+    buildpacks:
+      - https://github.com/cloudfoundry/java-buildpack.git
+    services:
+      - smtp

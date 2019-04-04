@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: spring-mailsender-demo
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+# Override sender/recipient addresses.
+mail:
+  sender: johndoe@nowhere.com
+  recipient: johndoe@nowhere.com
